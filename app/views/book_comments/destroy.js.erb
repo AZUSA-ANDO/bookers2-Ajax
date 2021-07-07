@@ -1,0 +1,2 @@
+$('#comment-<%= @book.id %>').html("<%= escape_javascript(render 'book_comments/comment_index', book: @book ) %>");
+$('.detail__table').html("<%= escape_javascript(render 'books/detail', book: @book) %>")
